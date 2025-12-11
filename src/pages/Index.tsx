@@ -253,6 +253,9 @@ const Index = () => {
         </ResizablePanelGroup>
       </div>
 
+      <footer className="py-4 text-center text-xs text-muted-foreground opacity-70">
+        Powered by Origin I
+      </footer>
     </div>
   );
 };
