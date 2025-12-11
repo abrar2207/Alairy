@@ -253,8 +253,14 @@ const Index = () => {
         </ResizablePanelGroup>
       </div>
 
-      <footer className="py-4 text-center text-xs text-muted-foreground opacity-70">
-        Powered by Origin I
+      <footer className="py-4 flex items-center justify-center gap-2 text-xs text-muted-foreground opacity-70">
+        <span>Powered by</span>
+        <img
+          src="https://i.ibb.co/HpVpWyMF/Whats-App-Image-2025-12-11-at-12-10-20-PM.jpg"
+          alt="Origin I Logo"
+          className="h-8 w-auto object-contain rounded-sm mix-blend-multiply dark:mix-blend-screen"
+        />
+        <span>Origin I</span>
       </footer>
     </div>
   );
