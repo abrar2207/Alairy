@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 220 20% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 18% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 18% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 220 20% 8%;
+
+    --secondary: 220 16% 16%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 16% 20%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 262 83% 58%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 16% 20%;
+    --input: 220 16% 20%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    /* Video player specific */
+    --player-bg: 220 20% 10%;
+    --player-controls: 220 18% 14%;
+    --player-accent: 217 91% 60%;
+    --player-accent-glow: 217 91% 60%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(262 83% 58%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(220 20% 8%) 0%, hsl(220 18% 12%) 100%);
+    --gradient-orange: linear-gradient(135deg, hsl(25 95% 53%) 0%, hsl(35 100% 50%) 100%);
+    
+    /* Shadows */
+    --shadow-glow: 0 0 30px hsl(217 91% 60% / 0.3);
+    --shadow-control: 0 4px 12px hsl(220 20% 4% / 0.4);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Origin Dark Theme */
+  [data-theme="origin-dark"] {
+    --background: 0 0% 8%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 98%;
+    --primary: 0 0% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 16%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 25 95% 53%;
+    --accent-foreground: 0 0% 10%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 25 95% 53%;
+    --player-bg: 0 0% 10%;
+    --player-controls: 0 0% 14%;
+    --player-accent: 25 95% 53%;
+    --player-accent-glow: 25 95% 53%;
+    --gradient-primary: linear-gradient(135deg, hsl(25 95% 53%) 0%, hsl(35 100% 50%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 8%) 0%, hsl(0 0% 12%) 100%);
+    --gradient-orange: linear-gradient(135deg, hsl(25 95% 53%) 0%, hsl(35 100% 50%) 100%);
+    --shadow-glow: 0 0 30px hsl(25 95% 53% / 0.3);
+  }
+
+  /* Origin Light Theme */
+  [data-theme="origin-light"] {
+    --background: 43 36% 93%;
+    --foreground: 0 0% 10%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 10%;
+    --popover: 0 0% 98%;
+    --popover-foreground: 0 0% 10%;
+    --primary: 43 36% 93%;
+    --primary-foreground: 0 0% 10%;
+    --secondary: 40 10% 88%;
+    --secondary-foreground: 0 0% 10%;
+    --muted: 40 10% 85%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 25 95% 53%;
+    --accent-foreground: 0 0% 98%;
+    --border: 40 10% 85%;
+    --input: 40 10% 85%;
+    --ring: 25 95% 53%;
+    --player-bg: 43 36% 93%;
+    --player-controls: 0 0% 92%;
+    --player-accent: 25 95% 53%;
+    --player-accent-glow: 25 95% 53%;
+    --gradient-primary: linear-gradient(135deg, hsl(25 95% 53%) 0%, hsl(35 100% 50%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(43 36% 93%) 0%, hsl(0 0% 98%) 100%);
+    --gradient-orange: linear-gradient(135deg, hsl(25 95% 53%) 0%, hsl(35 100% 50%) 100%);
+    --shadow-glow: 0 0 30px hsl(25 95% 53% / 0.3);
+  }
+
+  /* Melatonin Theme */
+  [data-theme="melatonin"] {
+    --background: 286 48% 53%;
+    --foreground: 210 40% 98%;
+    --card: 220 18% 12%;
+    --card-foreground: 210 40% 98%;
+    --popover: 220 18% 12%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 286 48% 53%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 220 16% 16%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 220 16% 20%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 345 100% 81%;
+    --accent-foreground: 0 0% 10%;
+    --border: 220 16% 20%;
+    --input: 220 16% 20%;
+    --ring: 286 48% 53%;
+    --player-bg: 286 48% 53%;
+    --player-controls: 220 18% 14%;
+    --player-accent: 345 100% 81%;
+    --player-accent-glow: 345 100% 81%;
+    --gradient-primary: linear-gradient(135deg, hsl(286 48% 53%) 0%, hsl(345 100% 81%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(286 48% 53%) 0%, hsl(220 18% 12%) 100%);
+    --shadow-glow: 0 0 30px hsl(345 100% 81% / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
